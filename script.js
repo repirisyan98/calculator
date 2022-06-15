@@ -62,16 +62,18 @@ const calculate = () => {
             result = parseFloat(currentNumber) / 100
             break;
         default:
+            result = currentNumber
             break;
     }
 
-    currentNumber = result
+    currentNumber = result.toString()
     calculationOperator = ''
 }
 
 equalSign.addEventListener('click', () => {
     calculate()
     updateScreen(currentNumber)
+    console.log(currentNumber)
 })
 
 const clearBtn = document.querySelector('.all-clear')
