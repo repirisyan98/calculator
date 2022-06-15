@@ -1,3 +1,5 @@
+screen.orientation.lock("portrait-primary")
+
 const calculatorScreen = document.querySelector('.calculator-screen')
 let prevNumber = ''
 let calculationOperator = ''
